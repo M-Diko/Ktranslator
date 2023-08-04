@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Form Example</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/translate.js/1.0.2/translate.min.js"></script>
 </head>
 <body>
   <div class="loader-container">
-    <div class="stack title">Korean to English translator</div>
+    <div class="stack title">ENGLISH TO KOREAN TRANSLATOR</div>
     <div class="stack loader"></div>
   </div>
 
   <div class="container"  id="content" style="display: none;">
-    <div class="title">Korean to English translator</div>
+    <div class="title">English to Korean translator</div>
     <br>
     <div class="logo">
         <img src="Flag.png" alt="flag" style="width:170px;height:170px; border-radius: 50%;"/>
@@ -25,9 +26,9 @@
         <textarea id="message" name="message" placeholder="Type Phrase to translate here..."></textarea>
 
         <label for="result">RESULT:</label>
-        <textarea id="result" name="result" placeholder="Result"></textarea>
+        <textarea id="translated" name="translated" placeholder="Result"></textarea>
 
-        <button type="submit">Submit</button>
+        <button type="submit" id="trans" onclick="translateToKorean()">TRANSLATE TO KOREAN</button>
     </form>
     </div>
       
@@ -36,3 +37,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
